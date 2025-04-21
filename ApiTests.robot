@@ -35,7 +35,6 @@ Get pet with status Sold
 
 
 Create a pet in pet store
-          #[Tags]  CHIDI
           [Documentation]   This test should get pets by status
           ${body}=    Create Dictionary   id=0   name=simba   status=available
           ${response}=   POST   https://petstore.swagger.io/v2/pet   json=${body}
@@ -44,7 +43,6 @@ Create a pet in pet store
 
 
 Update a pet
-          #[Tags]  CHIDI
           [Documentation]   This test should get pets by status
           ${body}=    Create Dictionary   id=9223372036854735000   name=dog   status=available
           ${response}=   PUT   https://petstore.swagger.io/v2/pet   json=${body}
